@@ -20,30 +20,6 @@ position = Vector2( 1824, 1048 )
 [node name="Wall31" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1888, 1048 )
 
-[node name="Wall32" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1184, 984 )
-
-[node name="Wall33" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1248, 920 )
-
-[node name="Wall34" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1312, 856 )
-
-[node name="Wall35" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1376, 792 )
-
-[node name="Wall15" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1568, 1048 )
-
-[node name="Wall16" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1504, 1048 )
-
-[node name="Wall17" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1440, 1048 )
-
-[node name="Wall18" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1376, 1048 )
-
 [node name="Wall19" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1312, 1048 )
 
@@ -106,6 +82,18 @@ position = Vector2( 96, 544 )
 
 [node name="Lava" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1632, 1048 )
+
+[node name="Lava4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1568, 1048 )
+
+[node name="Lava5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1504, 1048 )
+
+[node name="Lava6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1440, 1048 )
+
+[node name="Lava7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1376, 1048 )
 
 [node name="Lava2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1696, 1048 )
