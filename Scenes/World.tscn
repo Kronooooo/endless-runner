@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Lava.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Node"]
 script = ExtResource( 1 )
@@ -12,9 +13,6 @@ position = Vector2( 32, 1048 )
 
 [node name="Wall4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 736, 1048 )
-
-[node name="Wall13" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1696, 1048 )
 
 [node name="Wall28" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1824, 1048 )
@@ -33,12 +31,6 @@ position = Vector2( 1312, 856 )
 
 [node name="Wall35" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1376, 792 )
-
-[node name="Wall29" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1760, 1048 )
-
-[node name="Wall14" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1632, 1048 )
 
 [node name="Wall15" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1568, 1048 )
@@ -111,3 +103,12 @@ position = Vector2( 160, 1048 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 96, 544 )
+
+[node name="Lava" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1632, 1048 )
+
+[node name="Lava2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1696, 1048 )
+
+[node name="Lava3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1760, 1048 )

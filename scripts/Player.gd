@@ -20,3 +20,6 @@ func getInput():
 		velocity.x = 0
 	if Input.is_action_just_pressed("jump") && is_on_floor():
 		velocity.y = -ySpeed
+
+func kill():
+	get_tree().reload_current_scene()
