@@ -25,3 +25,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v0.1.2] - 2021-04-24
 ### Added
  - basic level generation
+
+## [v0.1.3] - 2021-04-25
+### Added
+ - endless level generation
+ - new level
+ - checkpoint block which generates the next part of the map
+
+### Changed
+ - player hitbox
+ - probability of lava spawning
