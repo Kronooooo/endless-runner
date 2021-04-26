@@ -35,3 +35,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
  - player hitbox
  - probability of lava spawning
+
+## [v0.1.4] -
+### Added
+ - keys
+ - doors
+
+### Changed
+ - max number of lava blocks spawning consecutively (7 -> 6)
