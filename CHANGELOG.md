@@ -36,7 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - player hitbox
  - probability of lava spawning
 
-## [v0.1.4] -
+## [v0.1.4] - 2021-04-26
 ### Added
  - keys
  - doors
