@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Wall.tscn" type="PackedScene" id=2]
@@ -61,20 +61,6 @@ position = Vector2( 544, 1048 )
 [node name="Wall8" parent="." instance=ExtResource( 2 )]
 position = Vector2( 480, 1048 )
 
-[node name="Wall13" parent="." instance=ExtResource( 2 )]
-position = Vector2( 480, 984 )
-
-[node name="Wall14" parent="." instance=ExtResource( 2 )]
-position = Vector2( 480, 920 )
-
-[node name="Wall15" parent="." instance=ExtResource( 2 )]
-position = Vector2( 480, 856 )
-
-[node name="Wall16" parent="." instance=ExtResource( 2 )]
-position = Vector2( 480, 792 )
-
-[node name="Wall17" parent="." instance=ExtResource( 2 )]
-position = Vector2( 480, 728 )
 
 [node name="Wall9" parent="." instance=ExtResource( 2 )]
 position = Vector2( 416, 1048 )
@@ -95,7 +81,8 @@ position = Vector2( 96, 1048 )
 position = Vector2( 160, 1048 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 128, 576 )
+
+position = Vector2( 96, 544 )
 
 [node name="Lava" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1632, 1048 )
@@ -117,9 +104,3 @@ position = Vector2( 1696, 1048 )
 
 [node name="Lava3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1760, 1048 )
-
-[node name="Key" parent="." instance=ExtResource( 5 )]
-position = Vector2( 704, 832 )
-
-[node name="Door" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1312, 984 )
