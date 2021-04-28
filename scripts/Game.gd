@@ -15,7 +15,6 @@ var Checkpoint = load("res://scenes/Checkpoint.tscn")
 var Key = load("res://scenes/Key.tscn")
 var Door = load("res://scenes/Door.tscn")
 
-const MAXLAVA = 7
 const BLOCKSIZE = 64
 const LAVACHANCE = 0.50
 

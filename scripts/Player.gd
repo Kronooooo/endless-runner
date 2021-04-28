@@ -5,6 +5,8 @@ var ySpeed = 1000
 var velocity = Vector2()
 var minCameraX = 0
 
+var hasKey = false
+
 const GRAVITY = 2000
 
 func _ready():
@@ -14,7 +16,7 @@ func _physics_process(delta):
 	velocity.y += delta * GRAVITY
 	getInput()
 	velocity = move_and_slide(velocity, Vector2(0,-1))
-	position.x = clamp(position.x,get_node("Camera2D").position.x+10,INF)
+	position.x = clamp(position.x,get_node("Camera2D").position.x+10,position.x+30)
 	if $Camera2D.position.x > minCameraX:
 		$Camera2D.limit_left = $Camera2D.position.x
 		minCameraX = $Camera2D.position.x
