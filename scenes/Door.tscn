@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/Door.gd" type="Script" id=1]
 [ext_resource path="res://sprites/tempdoor.png" type="Texture" id=2]
@@ -8,6 +8,9 @@ extents = Vector2( 32, 64 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 1, 64 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 1, 144 )
 
 [node name="Door" type="StaticBody2D"]
 script = ExtResource( 1 )
@@ -26,4 +29,11 @@ shape = SubResource( 1 )
 position = Vector2( -8, -64 )
 shape = SubResource( 2 )
 
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 120, -64 )
+shape = SubResource( 3 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
