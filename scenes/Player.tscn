@@ -13,18 +13,28 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 32, -32 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 32, -32 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 process_mode = 0
 limit_left = 0
-limit_bottom = 1016
+limit_bottom = 1080
 limit_smoothed = true
 drag_margin_v_enabled = true
 drag_margin_top = 0.0
+
+[node name="Deflect" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[node name="Cooldown" type="Timer" parent="."]
+one_shot = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[connection signal="timeout" from="Deflect" to="." method="_on_Deflect_timeout"]
+[connection signal="timeout" from="Cooldown" to="." method="_on_Cooldown_timeout"]

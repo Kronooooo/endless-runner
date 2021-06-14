@@ -11,6 +11,7 @@ func _on_Area2D_body_entered(body):
 	if body.get_name() == "Player":
 		if body.hasKey == true:
 			$"door collision".queue_free()
+			$Sprite.queue_free()
 			body.hasKey = false
 
 
